@@ -57,8 +57,8 @@ while True:
                      [98 + ECG_index, int(113 - (previous_x - ECG_min) / (ECG_max - ECG_min) * (113 - 61))], BLUE, 1)
             previous_x = x
 
-    file_name = 'data' + str(loops) + '.png'
-    cv2.imwrite(file_name, image)
+    # file_name = 'data' + str(loops) + '.png'
+    # cv2.imwrite(file_name, image)
 
     image = Image.fromarray(image, 'RGB')
     image = image.resize((INPUT_SIZE, INPUT_SIZE))
